@@ -44,10 +44,10 @@ const Main = () => {
     <>
       <h1 className=' text-center bg-gray-500 m-5 text-2xl'> My ToDo List</h1>
       <form className=' text-center' onSubmit={submitHandler}>
-        <input type='text' className='border-zinc-500 border-2 p-1 m-5 ' placeholder='Enter Your Task' value={task} onChange={(e) => {
+        <input type='text' required className='border-zinc-500 border-2 p-1 m-5 ' placeholder='Enter Your Task' value={task} onChange={(e) => {
           settask(e.target.value);
         }} />
-        <input type='text' className='border-zinc-500 border-2 p-1 m-5 ' placeholder='Enter Description' value={desc} onChange={(e) => {
+        <input type='text' required className='border-zinc-500 border-2 p-1 m-5 ' placeholder='Enter Description' value={desc} onChange={(e) => {
           setdesc(e.target.value);
         }} />
         <button className='m-5 border-zinc-800 border-2 rounded p-3'>Add</button>
